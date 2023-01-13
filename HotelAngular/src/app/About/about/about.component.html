@@ -1,0 +1,136 @@
+<div class="varb">
+  <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(https://cdn1.tablethotels.com/media/ecs/global/email/assets/20200402_Zoom/TabletHotels_Public-Mirrored.jpg); ">
+    <app-navbar> </app-navbar>
+
+    <div class="full-bg-img mask rgba-black-light">
+
+      <div class="container flex-center">
+
+        <div class="row pt-5 mt-3 w-100">
+
+          <div class="col-md-12">
+
+            <div class="text-center">
+              <div class="content">
+                <h1 class="h1 h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown " data-wow-delay="0.3s">
+                  <strong>
+                    ABOUT US
+                  </strong>
+                </h1>
+
+
+
+                <h4 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s">
+                  Choose Hotel de Ville for the very best hotel in Beirut during your stay in Lebanon.
+                </h4>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container">
+    <div class="fader">
+      <div class="text-center" *ngFor="let fd of service2.list">
+        <h2 class="h2 h2-reponsive white-text font-up font-bold mb-3 wow fadeInDown " data-wow-delay="0.3s">
+          <strong>
+            OUR Hotel
+          </strong>
+        </h2>
+        <hr />
+
+
+
+        <h6 class="h4 h4-reponsive white-text font-up  mb-3 wow fadeInDown" data-wow-delay="0.3s">
+          {{fd.aboutUs}}
+        </h6>
+      </div>
+
+    </div>
+  </div>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <br />
+  <br />
+  <div class="container">
+    <h2 class="text-center">Contact Address</h2>
+    <hr>
+    <div class="row">
+      <div class="col-sm-8">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.335257569233!2d35.50878171469448!3d33.881018534182154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ef140a5086385%3A0x679d8e1d6db361b9!2sHotel%20De%20Ville%2C%20Beirut!5e0!3m2!1sen!2slb!4v1610117708971!5m2!1sen!2slb" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <div class="col-sm-4" id="contact2" *ngFor="let fd of service2.list">
+        <h3>Locations and contacts</h3>
+        <hr align="left" width="50%">
+        <h4 class="pt-2">
+          operational headquarters
+        </h4>
+        <i class="fas fa-globe" style="color:#000"></i> {{fd.address1}}<br>
+        <h4 class="pt-2">Contatti</h4>
+        <i class="fas fa-phone" style="color:#000"></i> <a href="tel:+"> {{fd.phone1}} </a><br>
+        <i class="fab fa-whatsapp" style="color:#000"></i><a href="tel:+">  {{fd.phone2}} </a><br>
+        <h4 class="pt-2">Email</h4>
+        <i class="fa fa-envelope" style="color:#000"></i> <a href=""> {{fd.email}}</a><br>
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+
+  <footer class="text-center text-lg-start bg-light text-muted"*ngFor="let fd of service2.list">
+    <!-- Section: Social media -->
+    <!-- Section: Social media -->
+    <!-- Section: Links  -->
+    <section class="faro">
+      <div class="container text-center text-md-start mt-5" >
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <p><i class="fas fa-home me-3"></i> {{fd.address1}}</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              {{fd.email}}
+            </p>
+            <p><i class="fas fa-phone me-3"></i> {{fd.phone1}}</p>
+            <p><i class="fas fa-print me-3"></i> {{fd.phone2}}</p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Copyright
+            </h6>
+            <p>
+              {{fd.copyRight}}
+            </p>
+
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="">{{fd.email}}</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</div>

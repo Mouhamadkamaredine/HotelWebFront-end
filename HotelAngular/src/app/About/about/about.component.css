@@ -1,0 +1,315 @@
+
+.banner {
+  background-color: #000000
+}
+
+.banno {
+  padding-top: 100px;
+}
+
+.intro-header {
+  height: unset !important;
+}
+
+.top-nav-collapse {
+  background-color: #78909c !important;
+}
+
+.view {
+  height: 100vh !important;
+}
+
+.a {
+  background: #000000;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #78909c !important;
+  }
+}
+
+
+
+
+@keyframes animate {
+  0%,10%,100% {
+    width: 0;
+  }
+
+  70%,90% {
+    width: 100%;
+  }
+}
+
+h5 {
+  letter-spacing: 3px;
+  color: linen;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+h1 {
+}
+
+hr {
+  border-top: 3px solid #fff;
+  width: auto;
+}
+
+@media (max-width: 740px) {
+  .full-height,
+  .full-height body,
+  .full-height header,
+  .full-height header
+  .view {
+    height: 700px;
+  }
+}
+
+.content {
+  margin-top: 100px;
+  background-position-x: center;
+  background-position-y: center; /* Position the background text */
+  /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgb(34, 23, 19, 0.23); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  /* Full width */
+  /* Some padding */
+  /* Full width */
+  padding: 20px;
+}
+
+.banner {
+  background-color: #000000
+}
+
+.banno {
+  padding-top: 100px;
+}
+
+.intro-header {
+  height: unset !important;
+}
+
+.top-nav-collapse {
+  background-color: #78909c !important;
+}
+
+.view {
+  height: 100vh !important;
+}
+
+.a {
+  background: #000000;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #78909c !important;
+  }
+}
+
+
+h1 {
+  letter-spacing: 8px;
+}
+
+h2 {
+  position: center;
+  color: #D4AF37;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h5 {
+  font-size: 20PX;
+  color: #D4AF37;
+}
+
+h6 {
+  letter-spacing: 3px;
+  color: #000000;
+  margin-top: 1%;
+  padding: 2%;
+}
+
+
+hr {
+  border-top: 1.5px solid #808080;
+  width: auto;
+  padding-left: 50%;
+  margin-top: 5%;
+}
+
+@media (max-width: 740px) {
+  .full-height,
+  .full-height body,
+  .full-height header,
+  .full-height header
+  .view {
+    height: 700px;
+  }
+}
+
+.content {
+  margin-top: 100px;
+  background-position-x: center;
+  background-position-y: center; /* Position the background text */
+  /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  /* Full width */
+  /* Some padding */
+  /* Full width */
+  padding: 20px;
+}
+
+.fader {
+  margin-top: 100px;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+
+.appdrag-image img {
+  border-radius: inherit;
+}
+
+.appallin-universal-section img {
+  max-width: 100%;
+}
+
+img.lazy-img {
+  -webkit-transition: opacity .3s linear;
+  -moz-transition: opacity .3s linear;
+  -o-transition: opacity .3s linear;
+  transition: opacity .3s linear;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  vertical-align: middle;
+  padding-top: 20%;
+  display: block;
+  width: 300px;
+  height: 400px;
+}
+
+img {
+  border: 0;
+}
+
+.card-group {
+}
+
+.card {
+  border: none;
+  padding: 2%;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.footer {
+  background: #292e31;
+  color: #d2d2d2;
+  padding: 7px;
+  margin-top: -1px;
+}
+
+a {
+  color: #d2d2d2;
+}
+
+
+
+
+
+
+.container {
+  width: calc(100% - 30px);
+  max-width: 1170px !important;
+}
+
+@media (min-width: 768px) .container {
+  width: 600px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.image-container:hover .card-img-top {
+  display: block;
+  animation: fade_in_show 1.2s
+}
+
+.xyz-replacement {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
+  transition: opacity 10s ease
+}
+
+@keyframes fade_in_show {
+  0% {
+    opacity: 0;
+    transform: scale(0)
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+mdb-carousel-item {
+  width: max-content;
+  height: 900px;
+}
+.col-md-8 {
+  margin-top: -50%;
+  margin-left: 150%;
+}
+
+
+.jumbotron {
+  margin-top: 20%;
+  width: auto;
+}
+
+.faro {
+  margin-top: 13%;
+}
+.image-container {
+  height: 900px;
+}
+
+mdb-carousel-item {
+
+
+ padding-left:100px;
+}

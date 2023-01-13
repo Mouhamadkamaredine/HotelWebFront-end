@@ -1,0 +1,16 @@
+.navbar-brand {
+  padding-left: 100px;
+ text-size-adjust:inherit;
+}
+
+.nav-link dropdown-toggle {
+  cursor: pointer;
+}
+.dopper {
+
+padding-top:3.5%;
+font-size:large;
+position:center;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}

@@ -1,0 +1,189 @@
+<div class="varb">
+  <div
+    class="view jarallax"
+    data-jarallax='{"speed": 0.2}'
+    style="
+      background-image: url(https://i.pinimg.com/originals/19/a5/9a/19a59abcf3f6f8685698468e31cca184.jpg);
+    "
+  >
+    <app-navbar> </app-navbar>
+
+    <div class="full-bg-img mask rgba-black-light">
+      <div class="container flex-center">
+        <div class="row pt-5 mt-3 w-100">
+          <div class="col-md-12">
+            <div class="text-center">
+              <div class="content">
+                <h1
+                  class="h1 h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown"
+                  data-wow-delay="0.3s"
+                >
+                  <strong> HOTEL DE LA VILLE </strong>
+                </h1>
+
+                <br />
+
+                <h4
+                  class="font-up mb-5 white-text wow fadeInDown"
+                  data-wow-delay="0.4s"
+                >
+                  REST & RELAXING
+                </h4>
+
+                <a
+                  mdbBtn
+                  color="white"
+                  outline="true"
+                  class="wow fadeInDown waves-light"
+                  data-wow-delay="0.4s"
+                  mdbWavesEffect
+                  routerLink="/room"
+                >
+                  Our Room
+                </a>
+
+                <a
+                  mdbBtn
+                  color="white"
+                  outline="true"
+                  class="wow fadeInDown waves-light"
+                  data-wow-delay="0.4s"
+                  mdbWavesEffect
+                  routerLink="/about"
+                >
+                  About Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="fader">
+      <div class="text-center" *ngFor="let fd of service2.list">
+        <h2
+          class="h2 h2-reponsive white-text font-up font-bold mb-3 wow fadeInDown"
+          data-wow-delay="0.3s"
+        >
+          <strong> OUR HOTEL </strong>
+        </h2>
+        <hr />
+
+        <h6
+          class="h4 h4-reponsive white-text font-up mb-3 wow fadeInDown"
+          data-wow-delay="0.3s"
+        >
+          {{ fd.descreption }}
+        </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-group">
+    <div class="card" *ngFor="let pd of service.list">
+      <img [src]="pd.image" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{ pd.name }}</h5>
+        <p class="card-text">{{ pd.title }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="fader">
+      <div class="text-center">
+        <h2
+          class="h2 h2-reponsive white-text font-up font-bold mb-3 wow fadeInDown"
+          data-wow-delay="0.3s"
+        >
+          <strong> ROOMS & SUITES </strong>
+        </h2>
+        <hr />
+
+        <h6
+          class="h4 h4-reponsive white-text font-up mb-3 wow fadeInDown"
+          data-wow-delay="0.3s"
+        >
+          Choose from a variety of sizes and styles.
+        </h6>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div
+      class="col-md-3 mx-auto my-5"
+      *ngFor="let pd of service1.list"
+      style="width: 21.5rem"
+    >
+      <div class="card-group">
+        <div class="card" routerLink="/room">
+          <div class="image-container">
+            <img [src]="pd.roomImage" class="card-img-top" alt="..." />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{ pd.roomName }}</h5>
+            <p class="card-text">
+              {{ pd.descreption }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <!-- Section: Social media -->
+    <!-- Section: Links  -->
+    <section class="faro">
+      <div
+        class="container text-center text-md-start mt-5"
+        *ngFor="let fd of service2.list"
+      >
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> {{ fd.address1 }}</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              {{ fd.email }}
+            </p>
+            <p><i class="fas fa-phone me-3"></i> {{ fd.phone1 }}</p>
+            <p><i class="fas fa-print me-3"></i> {{ fd.phone2 }}</p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Copyright</h6>
+            <p>
+              {{ fd.copyRight }}
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="">hotel.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
